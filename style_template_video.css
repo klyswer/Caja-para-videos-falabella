@@ -2,24 +2,32 @@
 body{
     min-height: 100%;
     background: gray;
+  
+}
+.selector{
+    border-style: dashed;
+    border-color: #00d559;
+    border-width: 3px;
+    padding: 1px;
 }
 .container_main{
     margin: 0px;
     padding: 0px;
     text-decoration: none;
+    width: 100%;
+    /* height: 1000px; */
 
     display: flex;
     justify-content:center;
-   
     align-items: center; 
 }
 .box_video{
     display: flex;
     justify-content:flex-start;
 
-    min-width: 760px;
-    min-height: 520px;
-    background: rgb(58, 58, 58);
+    min-width: 740px;
+    height: 560px;
+    background: rgb(255, 255, 253);
 
     border-radius: 10px;   
 }
@@ -30,6 +38,9 @@ body{
     flex-direction: row;
 
     background: #aad500;
+    background: linear-gradient(100deg, rgba(170,213,0,1) 0%, rgba(170,213,0,1) 51%, rgba(143,202,0,1) 51%, rgba(143,202,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aad500', endColorstr='#8fca00', GradientType=1 );
+    
     min-height: 100%;
     width: 6%;
 
@@ -41,13 +52,14 @@ body{
         }
 
     .segment_rigth{
-        background-image: url('includes/img/falabella.png');
+        /* background-image: url('includes/img/falabella.png');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 100% 100%;
+        background-size: 100% 100%; */
+        background: rgb(255, 255, 253);
         
-        height: 520px;
-        width: 720px;
+        height: 100%;
+        width: 760px;
 
         border-radius: 0px 10px 10px 0px;
 
@@ -58,7 +70,8 @@ body{
     }
         .title_bar{
             max-height: 40px;
-            min-width: 720px;
+            margin-bottom: 5px;
+            min-width: 740px;
             background: #333333;
             border-radius: 0px 10px 0px 0px;
             
@@ -66,14 +79,112 @@ body{
             justify-content: flex-start;
             align-items: center;
         }
+        
             .text_title{
-                color: white;
-                font-weight: 900;
+                color: rgb(255, 255, 253);
+                /* font-weight: 900; */
                 margin-left: 10px;
+                font-size: 22px;
+                font-family: 'Lato', sans-serif;
             }
+    .caja_descri_logo{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+    
+        width: 720px;
+        height: 65px;
+
+        margin-top:10px;
+        margin-bottom: 10px;
+        
+
+    }
+        .description_box{
+            width: 700px;
+            height: 60px;
+           
+
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+
+        }
+        .logo_box{
+            margin:0px;
+            padding: 0px;
+            height: 60px;
+            /* margin-left:20px; */
+        }
         .media_block{
             height: 480px;
             width: 720px;
-            background: rgba(255, 255, 255, 0.86);
-            border-radius: 0px 0px 10px 0px;
+            /* position:absolute; */
+            /* background: rgba(0, 0, 0, 0.99); */
+            border-radius: 0px 0px 10px 10px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+            .video_styles{
+                width:720px;
+                min-height:400px;   
+            }
+
+        .smrt_esquinaPop{  
+            position: absolute;
+            left: 70%;
+            
+            border-top: 15px solid  rgb(255, 255, 253);
+            border-right: 15px solid transparent;
+            border-left: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+        }
+
+        /* _______Animation FadeIn CSS_____________________ */
+        #test p {
+            opacity: 0;
+            }
+            
+            #test p:hover {
+                opacity: 1;
+                
+                animation: fadein 2s;
+                -moz-animation: fadein 2s; /* Firefox */
+                -webkit-animation: fadein 2s; /* Safari and Chrome */
+                -o-animation: fadein 2s; /* Opera */
+            }
+            @keyframes fadein {
+                from {
+                    opacity:0;
+                }
+                to {
+                    opacity:1;
+                }
+            }
+            @-moz-keyframes fadein { /* Firefox */
+                from {
+                    opacity:0;
+                }
+                to {
+                    opacity:1;
+                }
+            }
+            @-webkit-keyframes fadein { /* Safari and Chrome */
+                from {
+                    opacity:0;
+                }
+                to {
+                    opacity:1;
+                }
+            }
+            @-o-keyframes fadein { /* Opera */
+                from {
+                    opacity:0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+/* ____________________________________________________________ */
